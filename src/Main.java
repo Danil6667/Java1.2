@@ -1,26 +1,18 @@
 public class Main {
         public static void main(String[] args) {
-            Boss boss = new Boss();
-            boss.setHp(700);
-            boss.setDamage(50);
-            boss.setWeapon(new Weapon("Mech", "Katana"));
-            System.out.println(boss.getHp() + " " + boss.getDamage() + " " + boss.getWeapon().getName() + "" +
-                    " " + boss.getWeapon().getTip() );
-            System.out.println( boss.ptintInfo());
 
-            Sceleton sceleton1 = new Sceleton();
-            sceleton1.setHp(300);
-            sceleton1.setDamage(20);
-            sceleton1.setNumberOfArrows(15);
-            System.out.println(sceleton1.ptintInfo());
+            Homeland homeland = new Homeland("Òóðåöêèé ");
+            Homeland homeland1 = new Homeland("Òàøêåíñêèé ");
+            Citrus citrus = new Citrus("Êèâè ", Color.GREEN, homeland,5);
+            Lemon lemon = new Lemon("Ëèìîí ", Color.YELLOW, homeland1, 3, 120);
+            Lemon lemon1 = new Lemon("Àïåëüñèí ", Color.RED, homeland,6,150 );
 
 
+            System.out.println(citrus.printInfo());
+            System.out.println(lemon.printInfo());
+            System.out.println(lemon1.printInfo());
 
-            Sceleton sceleton2 =new Sceleton();
-            sceleton2.setHp(250);
-            sceleton2.setDamage(30);
-            sceleton2.setNumberOfArrows(20);
-            System.out.println(sceleton2.ptintInfo());
         }
     }
+
 
